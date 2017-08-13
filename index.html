@@ -148,96 +148,6 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-ES6模板字符串" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/08/13/ES6模板字符串/">ES6-Template-String</a>
-    </h1>
-  
-
-        
-        <a href="/2017/08/13/ES6模板字符串/" class="archive-article-date">
-  	<time datetime="2017-08-13T14:00:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="es6模板字符串-template-string"><a href="#es6模板字符串-template-string" class="headerlink" title="es6模板字符串(template string)"></a>es6模板字符串(template string)</h1><blockquote>
-<p>ES6引入了一种新型的字符串字面量语法，我们称之为模板字符串（template strings)<br>模板字符串使用 <code>` </code> (反引号, tab键上的那个键) 代替 <code>&#39;</code> 或者 <code>&quot;</code><br>除了一些新我，其他与引号表现一致</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="string">`我是中国人，我爱自己的祖国!`</span></div><div class="line"><span class="keyword">var</span> b = <span class="string">`我是中国人`</span> + <span class="string">`我爱自己的祖国`</span></div></pre></td></tr></table></figure>
-<p>在以前拼接字符串时，是这么写的</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> template = </div><div class="line">  <span class="string">'&lt;ul&gt;'</span> +</div><div class="line">  <span class="string">'&lt;li&gt;我是小明&lt;/li&gt;'</span> +</div><div class="line">  <span class="string">'&lt;li&gt;我是红&lt;/li&gt;'</span> +</div><div class="line">  <span class="string">'&lt;li&gt;我是小明&lt;/li&gt;'</span> +</div><div class="line"><span class="string">'&lt;/ul&gt;'</span></div><div class="line"><span class="built_in">console</span>.log(template.length) <span class="comment">// 47</span></div></pre></td></tr></table></figure>
-<p>现在可以这么写字符串</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 首尾一个反引号, 不需要拼接，直接就可以换行!</span></div><div class="line"><span class="keyword">var</span> template = </div><div class="line"><span class="string">`&lt;ul&gt;</span></div><div class="line">  &lt;li&gt;我是小明&lt;/li&gt;</div><div class="line">  &lt;li&gt;我是红&lt;/li&gt;</div><div class="line">  &lt;li&gt;我是小明&lt;/li&gt;</div><div class="line">&lt;/ul&gt;`</div><div class="line"><span class="built_in">console</span>.log(template.length) <span class="comment">// 57</span></div></pre></td></tr></table></figure>
-<p><em>模板字符串中的换行和缩近都会算作字符串的一部分!</em></p>
-<p>如果希望在模板字符串中嵌入变量，可以使用<code>${}</code>作占位, 在这两个大括号之间写入当前作用域中的变量名就可以了</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> name = <span class="string">'小明'</span></div><div class="line"><span class="keyword">var</span> age = <span class="number">18</span></div><div class="line"><span class="keyword">var</span> msg = <span class="string">`我叫<span class="subst">$&#123;name&#125;</span>，我今年<span class="subst">$&#123;age&#125;</span>岁了!`</span> <span class="comment">// 我叫小明，我今年18岁了</span></div><div class="line"><span class="keyword">var</span> msg2 = <span class="string">`Hello, <span class="subst">$&#123;<span class="string">'world'</span>&#125;</span>`</span> <span class="comment">// Hello, world</span></div></pre></td></tr></table></figure>
-<p>模板字符串的大括号中还可以写JavaScript表达式</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> sum = <span class="string">`<span class="subst">$&#123;<span class="number">1</span> + <span class="number">1</span>&#125;</span>`</span> <span class="comment">// 2</span></div><div class="line"><span class="keyword">var</span> obj = &#123;<span class="attr">a</span>: <span class="number">1</span>, <span class="attr">b</span>: <span class="number">2</span>&#125;</div><div class="line"><span class="keyword">var</span> count = <span class="string">`<span class="subst">$&#123;obj.a + obj.b&#125;</span>`</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">hello</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> <span class="string">'我是中国人，我爱自己的祖国!'</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> msg = <span class="string">`我想说: <span class="subst">$&#123;hello()&#125;</span>`</span> <span class="comment">// 我想说: 我是中国人，我爱自己的祖国!</span></div></pre></td></tr></table></figure>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">es6</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/08/13/ES6模板字符串/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
     <article id="post-test02" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -354,6 +264,96 @@
       
         <p class="article-more-link">
           <a class="article-more-a" href="/2017/07/19/hello-world/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
+    <article id="post-ES6模板字符串" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/08/13/ES6模板字符串/">ES6-Template-String</a>
+    </h1>
+  
+
+        
+        <a href="/2015/08/13/ES6模板字符串/" class="archive-article-date">
+  	<time datetime="2015-08-13T14:00:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2015-08-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="es6模板字符串-template-string"><a href="#es6模板字符串-template-string" class="headerlink" title="es6模板字符串(template string)"></a>es6模板字符串(template string)</h1><blockquote>
+<p>ES6引入了一种新型的字符串字面量语法，我们称之为模板字符串（template strings)<br>模板字符串使用 <code>` </code> (反引号, tab键上的那个键) 代替 <code>&#39;</code> 或者 <code>&quot;</code><br>除了一些新我，其他与引号表现一致</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="string">`我是中国人，我爱自己的祖国!`</span></div><div class="line"><span class="keyword">var</span> b = <span class="string">`我是中国人`</span> + <span class="string">`我爱自己的祖国`</span></div></pre></td></tr></table></figure>
+<p>在以前拼接字符串时，是这么写的</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> template = </div><div class="line">  <span class="string">'&lt;ul&gt;'</span> +</div><div class="line">  <span class="string">'&lt;li&gt;我是小明&lt;/li&gt;'</span> +</div><div class="line">  <span class="string">'&lt;li&gt;我是红&lt;/li&gt;'</span> +</div><div class="line">  <span class="string">'&lt;li&gt;我是小明&lt;/li&gt;'</span> +</div><div class="line"><span class="string">'&lt;/ul&gt;'</span></div><div class="line"><span class="built_in">console</span>.log(template.length) <span class="comment">// 47</span></div></pre></td></tr></table></figure>
+<p>现在可以这么写字符串</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 首尾一个反引号, 不需要拼接，直接就可以换行!</span></div><div class="line"><span class="keyword">var</span> template = </div><div class="line"><span class="string">`&lt;ul&gt;</span></div><div class="line">  &lt;li&gt;我是小明&lt;/li&gt;</div><div class="line">  &lt;li&gt;我是红&lt;/li&gt;</div><div class="line">  &lt;li&gt;我是小明&lt;/li&gt;</div><div class="line">&lt;/ul&gt;`</div><div class="line"><span class="built_in">console</span>.log(template.length) <span class="comment">// 57</span></div></pre></td></tr></table></figure>
+<p><em>模板字符串中的换行和缩近都会算作字符串的一部分!</em></p>
+<p>如果希望在模板字符串中嵌入变量，可以使用<code>${}</code>作占位, 在这两个大括号之间写入当前作用域中的变量名就可以了</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> name = <span class="string">'小明'</span></div><div class="line"><span class="keyword">var</span> age = <span class="number">18</span></div><div class="line"><span class="keyword">var</span> msg = <span class="string">`我叫<span class="subst">$&#123;name&#125;</span>，我今年<span class="subst">$&#123;age&#125;</span>岁了!`</span> <span class="comment">// 我叫小明，我今年18岁了</span></div><div class="line"><span class="keyword">var</span> msg2 = <span class="string">`Hello, <span class="subst">$&#123;<span class="string">'world'</span>&#125;</span>`</span> <span class="comment">// Hello, world</span></div></pre></td></tr></table></figure>
+<p>模板字符串的大括号中还可以写JavaScript表达式</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> sum = <span class="string">`<span class="subst">$&#123;<span class="number">1</span> + <span class="number">1</span>&#125;</span>`</span> <span class="comment">// 2</span></div><div class="line"><span class="keyword">var</span> obj = &#123;<span class="attr">a</span>: <span class="number">1</span>, <span class="attr">b</span>: <span class="number">2</span>&#125;</div><div class="line"><span class="keyword">var</span> count = <span class="string">`<span class="subst">$&#123;obj.a + obj.b&#125;</span>`</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">hello</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> <span class="string">'我是中国人，我爱自己的祖国!'</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> msg = <span class="string">`我想说: <span class="subst">$&#123;hello()&#125;</span>`</span> <span class="comment">// 我想说: 我是中国人，我爱自己的祖国!</span></div></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">es6</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2015/08/13/ES6模板字符串/">展开全文 >></a>
         </p>
       
 
