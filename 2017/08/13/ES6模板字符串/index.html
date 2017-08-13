@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017 | 火骑士空空的博客</title>
+  <title>ES6-Template-String | 火骑士空空的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="火骑士空空的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+  <meta name="description" content="es6模板字符串(template string) ES6引入了一种新型的字符串字面量语法，我们称之为模板字符串（template strings)模板字符串使用 `  (反引号, tab键上的那个键) 代替 &amp;#39; 或者 &amp;quot;除了一些新我，其他与引号表现一致  12var a = `我是中国人，我爱自己的祖国!`var b = `我是中国人` + `我爱自己的祖国` 在以前拼接字">
+<meta name="keywords" content="es6,javascript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ES6-Template-String">
+<meta property="og:url" content="http://yoursite.com/2017/08/13/ES6模板字符串/index.html">
 <meta property="og:site_name" content="火骑士空空的博客">
+<meta property="og:description" content="es6模板字符串(template string) ES6引入了一种新型的字符串字面量语法，我们称之为模板字符串（template strings)模板字符串使用 `  (反引号, tab键上的那个键) 代替 &amp;#39; 或者 &amp;quot;除了一些新我，其他与引号表现一致  12var a = `我是中国人，我爱自己的祖国!`var b = `我是中国人` + `我爱自己的祖国` 在以前拼接字">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-08-13T15:39:37.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="火骑士空空的博客">
+<meta name="twitter:title" content="ES6-Template-String">
+<meta name="twitter:description" content="es6模板字符串(template string) ES6引入了一种新型的字符串字面量语法，我们称之为模板字符串（template strings)模板字符串使用 `  (反引号, tab键上的那个键) 代替 &amp;#39; 或者 &amp;quot;除了一些新我，其他与引号表现一致  12var a = `我是中国人，我爱自己的祖国!`var b = `我是中国人` + `我爱自己的祖国` 在以前拼接字">
   
     <link rel="alternative" href="/atom.xml" title="火骑士空空的博客" type="application/atom+xml">
   
@@ -146,36 +151,68 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-ES6模板字符串" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/08/13/ES6模板字符串/" class="archive-article-date">
-  	<time datetime="2017-08-13T14:00:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-13</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/13/ES6模板字符串/">ES6-Template-String</a>
+    <h1 class="article-title" itemprop="name">
+      ES6-Template-String
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2017/08/13/ES6模板字符串/" class="archive-article-date">
+  	<time datetime="2017-08-13T14:00:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-13</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="es6模板字符串-template-string"><a href="#es6模板字符串-template-string" class="headerlink" title="es6模板字符串(template string)"></a>es6模板字符串(template string)</h1><blockquote>
+<p>ES6引入了一种新型的字符串字面量语法，我们称之为模板字符串（template strings)<br>模板字符串使用 <code>` </code> (反引号, tab键上的那个键) 代替 <code>&#39;</code> 或者 <code>&quot;</code><br>除了一些新我，其他与引号表现一致</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> a = <span class="string">`我是中国人，我爱自己的祖国!`</span></div><div class="line"><span class="keyword">var</span> b = <span class="string">`我是中国人`</span> + <span class="string">`我爱自己的祖国`</span></div></pre></td></tr></table></figure>
+<p>在以前拼接字符串时，是这么写的</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> template = </div><div class="line">  <span class="string">'&lt;ul&gt;'</span> +</div><div class="line">  <span class="string">'&lt;li&gt;我是小明&lt;/li&gt;'</span> +</div><div class="line">  <span class="string">'&lt;li&gt;我是红&lt;/li&gt;'</span> +</div><div class="line">  <span class="string">'&lt;li&gt;我是小明&lt;/li&gt;'</span> +</div><div class="line"><span class="string">'&lt;/ul&gt;'</span></div><div class="line"><span class="built_in">console</span>.log(template.length) <span class="comment">// 47</span></div></pre></td></tr></table></figure>
+<p>现在可以这么写字符串</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// 首尾一个反引号, 不需要拼接，直接就可以换行!</span></div><div class="line"><span class="keyword">var</span> template = </div><div class="line"><span class="string">`&lt;ul&gt;</span></div><div class="line">  &lt;li&gt;我是小明&lt;/li&gt;</div><div class="line">  &lt;li&gt;我是红&lt;/li&gt;</div><div class="line">  &lt;li&gt;我是小明&lt;/li&gt;</div><div class="line">&lt;/ul&gt;`</div><div class="line"><span class="built_in">console</span>.log(template.length) <span class="comment">// 57</span></div></pre></td></tr></table></figure>
+<p><em>模板字符串中的换行和缩近都会算作字符串的一部分!</em></p>
+<p>如果希望在模板字符串中嵌入变量，可以使用<code>${}</code>作占位, 在这两个大括号之间写入当前作用域中的变量名就可以了</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> name = <span class="string">'小明'</span></div><div class="line"><span class="keyword">var</span> age = <span class="number">18</span></div><div class="line"><span class="keyword">var</span> msg = <span class="string">`我叫<span class="subst">$&#123;name&#125;</span>，我今年<span class="subst">$&#123;age&#125;</span>岁了!`</span> <span class="comment">// 我叫小明，我今年18岁了</span></div><div class="line"><span class="keyword">var</span> msg2 = <span class="string">`Hello, <span class="subst">$&#123;<span class="string">'world'</span>&#125;</span>`</span> <span class="comment">// Hello, world</span></div></pre></td></tr></table></figure>
+<p>模板字符串的大括号中还可以写JavaScript表达式</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> sum = <span class="string">`<span class="subst">$&#123;<span class="number">1</span> + <span class="number">1</span>&#125;</span>`</span> <span class="comment">// 2</span></div><div class="line"><span class="keyword">var</span> obj = &#123;<span class="attr">a</span>: <span class="number">1</span>, <span class="attr">b</span>: <span class="number">2</span>&#125;</div><div class="line"><span class="keyword">var</span> count = <span class="string">`<span class="subst">$&#123;obj.a + obj.b&#125;</span>`</span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">hello</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  <span class="keyword">return</span> <span class="string">'我是中国人，我爱自己的祖国!'</span></div><div class="line">&#125;</div><div class="line"><span class="keyword">var</span> msg = <span class="string">`我想说: <span class="subst">$&#123;hello()&#125;</span>`</span> <span class="comment">// 我想说: 我是中国人，我爱自己的祖国!</span></div></pre></td></tr></table></figure>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -191,84 +228,104 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/08/13/ES6模板字符串/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/08/12/test02/" class="archive-article-date">
-  	<time datetime="2017-08-12T14:12:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-12</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2017/08/12/test02/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">test02</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/12/test02/">test02</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/19/hello-world/" class="archive-article-date">
-  	<time datetime="2017-07-19T00:41:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/19/hello-world/">Hello World</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -291,8 +348,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
