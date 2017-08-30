@@ -8,18 +8,18 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>Git备忘 | 火骑士空空的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="GitGit分支备注 编辑分支备注  1git branch --edit-descript[ion]  查看当前分支备注  1git config branch.&amp;lt;branchName&amp;gt;.descript[ion]">
+  <meta name="description" content="GitGit分支备注 编辑分支备注  1git branch --edit-descript[ion]  查看当前分支备注  1git config branch.&amp;lt;branchName&amp;gt;.descript[ion] 修改github仓库语言类型github 是根据项目里文件数目最多的文件类型,识别项目类型.这个够傻. 解决办法:  在项目根目录中添加一个.gitattributes文">
 <meta name="keywords" content="es6,javascript">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Git备忘">
 <meta property="og:url" content="http://yoursite.com/2017/08/13/Git/index.html">
 <meta property="og:site_name" content="火骑士空空的博客">
-<meta property="og:description" content="GitGit分支备注 编辑分支备注  1git branch --edit-descript[ion]  查看当前分支备注  1git config branch.&amp;lt;branchName&amp;gt;.descript[ion]">
+<meta property="og:description" content="GitGit分支备注 编辑分支备注  1git branch --edit-descript[ion]  查看当前分支备注  1git config branch.&amp;lt;branchName&amp;gt;.descript[ion] 修改github仓库语言类型github 是根据项目里文件数目最多的文件类型,识别项目类型.这个够傻. 解决办法:  在项目根目录中添加一个.gitattributes文">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-08-24T03:39:25.000Z">
+<meta property="og:updated_time" content="2017-08-30T11:51:03.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Git备忘">
-<meta name="twitter:description" content="GitGit分支备注 编辑分支备注  1git branch --edit-descript[ion]  查看当前分支备注  1git config branch.&amp;lt;branchName&amp;gt;.descript[ion]">
+<meta name="twitter:description" content="GitGit分支备注 编辑分支备注  1git branch --edit-descript[ion]  查看当前分支备注  1git config branch.&amp;lt;branchName&amp;gt;.descript[ion] 修改github仓库语言类型github 是根据项目里文件数目最多的文件类型,识别项目类型.这个够傻. 解决办法:  在项目根目录中添加一个.gitattributes文">
   
     <link rel="alternative" href="/atom.xml" title="火骑士空空的博客" type="application/atom+xml">
   
@@ -179,6 +179,14 @@
 <p>查看当前分支备注</p>
 </blockquote>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git config branch.&lt;branchName&gt;.descript[ion]</div></pre></td></tr></table></figure>
+<h2 id="修改github仓库语言类型"><a href="#修改github仓库语言类型" class="headerlink" title="修改github仓库语言类型"></a>修改github仓库语言类型</h2><p>github 是根据项目里文件数目最多的文件类型,识别项目类型.这个够傻.</p>
+<p>解决办法:</p>
+<blockquote>
+<p>在项目根目录中添加一个.gitattributes文件，添加如下内容</p>
+</blockquote>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">*.* linguist-language=javascript</div></pre></td></tr></table></figure>
+<p>作用:<br><em>.</em> 匹配项目中的所有文件<br>*.js 匹配项目中的js文件<br>让github将所有匹配到的文件识别为javascript语言, 如果希望识别其他语言, 将javascript修改为其他语言的名字即可</p>
+
       
 
       
@@ -296,8 +304,8 @@
     </a>
   
   
-    <a href="/2017/08/12/test02/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">test02</div>
+    <a href="/2017/08/13/fileUpload/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">formidable上传文件</div>
       <i class="icon-circle-right"></i>
     </a>
   
@@ -419,6 +427,10 @@
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">node.js</a>
               </li>
             
             <div class="clearfix"></div>
