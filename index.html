@@ -148,6 +148,72 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-canvas绘制自由线条" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/09/06/canvas绘制自由线条/">canvas绘制自由线条</a>
+    </h1>
+  
+
+        
+        <a href="/2017/09/06/canvas绘制自由线条/" class="archive-article-date">
+  	<time datetime="2017-09-06T12:50:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-06</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="canvas绘制自由线条"><a href="#canvas绘制自由线条" class="headerlink" title="canvas绘制自由线条"></a>canvas绘制自由线条</h1><blockquote>
+<p>使用canvas跟随鼠标绘制线条</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> oCanvas = <span class="built_in">document</span>.querySelector(<span class="string">'canvas'</span>)</div><div class="line"><span class="keyword">var</span> ctx = oCanvas.getContext(<span class="string">'2d'</span>)</div><div class="line"></div><div class="line"><span class="comment">// 鼠标按下时, beginPath,moveTo鼠标位置</span></div><div class="line"><span class="comment">// 此后每次鼠标移动时.lineTo鼠标位置，鼠标抬起进，绘制</span></div><div class="line">oCanvas.width = <span class="built_in">document</span>.body.offsetWidth</div><div class="line">oCanvas.height = <span class="built_in">document</span>.body.offsetWidth</div><div class="line"><span class="keyword">var</span> start = <span class="literal">false</span></div><div class="line"></div><div class="line">oCanvas.addEventListener(<span class="string">'touchstart'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line">  start = <span class="literal">true</span></div><div class="line">  ctx.beginPath()</div><div class="line">  <span class="keyword">var</span> touch = e.touches[<span class="number">0</span>]</div><div class="line">  ctx.moveTo(touch.pageX, touch.pageY)</div><div class="line">&#125;)</div><div class="line"></div><div class="line">oCanvas.addEventListener(<span class="string">'touchmove'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line">  <span class="keyword">if</span> (!start) <span class="keyword">return</span></div><div class="line">  <span class="keyword">var</span> touch = e.touches[<span class="number">0</span>]</div><div class="line">  ctx.lineTo(touch.pageX, touch.pageY)</div><div class="line">  ctx.stroke()</div><div class="line">&#125;)</div><div class="line">oCanvas.addEventListener(<span class="string">'touchend'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  start = <span class="literal">false</span></div><div class="line">  ctx.stroke()</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/09/06/canvas绘制自由线条/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-ES6模板字符串" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -707,11 +773,11 @@
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
+                <a href="javascript:void(0)" class="js-tag color3">node.js</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color3">node.js</a>
+                <a href="javascript:void(0)" class="js-tag color1">JavaScript</a>
               </li>
             
             <div class="clearfix"></div>
