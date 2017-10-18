@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://huoqishi.github.io">
-  <title>Archives: 2017 | 火骑士空空的博客</title>
+  <title>socket.io中获取session | 火骑士空空的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="火骑士空空的博客">
-<meta property="og:url" content="https://huoqishi.github.io/archives/2017/index.html">
+  <meta name="description" content="在socket.io中获取session 在使用express-session时，可以通过req.session来获取session。但是有些情况下无法得到req对象，例如在使用socket.io时，该如何获取到session值呢?  首先要得到cookie12345const qs = require(&apos;querystring&apos;)io.on(&apos;connection&apos;, socket =&amp;gt;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="socket.io中获取session">
+<meta property="og:url" content="https://huoqishi.github.io/2017/09/12/socket-io中获取session/index.html">
 <meta property="og:site_name" content="火骑士空空的博客">
+<meta property="og:description" content="在socket.io中获取session 在使用express-session时，可以通过req.session来获取session。但是有些情况下无法得到req对象，例如在使用socket.io时，该如何获取到session值呢?  首先要得到cookie12345const qs = require(&apos;querystring&apos;)io.on(&apos;connection&apos;, socket =&amp;gt;">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2017-10-18T11:23:29.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="火骑士空空的博客">
+<meta name="twitter:title" content="socket.io中获取session">
+<meta name="twitter:description" content="在socket.io中获取session 在使用express-session时，可以通过req.session来获取session。但是有些情况下无法得到req对象，例如在使用socket.io时，该如何获取到session值呢?  首先要得到cookie12345const qs = require(&apos;querystring&apos;)io.on(&apos;connection&apos;, socket =&amp;gt;">
   
     <link rel="alternative" href="/atom.xml" title="火骑士空空的博客" type="application/atom+xml">
   
@@ -146,332 +150,176 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-socket-io中获取session" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/20/模块化规范/" class="archive-article-date">
-  	<time datetime="2017-09-20T14:00:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-20</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/20/模块化规范/">Git备忘</a>
+    <h1 class="article-title" itemprop="name">
+      socket.io中获取session
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/16/大话http/" class="archive-article-date">
-  	<time datetime="2017-09-16T09:44:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-16</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/16/大话http/">大话http</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/12/socket-io中获取session/" class="archive-article-date">
+        
+        <a href="/2017/09/12/socket-io中获取session/" class="archive-article-date">
   	<time datetime="2017-09-11T19:15:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-12</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/12/socket-io中获取session/">socket.io中获取session</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="在socket-io中获取session"><a href="#在socket-io中获取session" class="headerlink" title="在socket.io中获取session"></a>在socket.io中获取session</h1><blockquote>
+<p>在使用express-session时，可以通过req.session来获取session。但是有些情况下无法得到req对象，例如在使用socket.io时，该如何获取到session值呢?</p>
+</blockquote>
+<h2 id="首先要得到cookie"><a href="#首先要得到cookie" class="headerlink" title="首先要得到cookie"></a>首先要得到cookie</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> qs = <span class="built_in">require</span>(<span class="string">'querystring'</span>)</div><div class="line">io.on(<span class="string">'connection'</span>, socket =&gt; &#123;</div><div class="line">  <span class="keyword">const</span> cookieStr = socket.handshake.headers.cookie</div><div class="line">  <span class="keyword">const</span> cookie = qs.parse(cookieStr, <span class="string">'; '</span>)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h2 id="解析签名"><a href="#解析签名" class="headerlink" title="解析签名"></a>解析签名</h2><blockquote>
+<p>由于express-session 中生成的cookie是签名过的, 要想得到真正的sessionID,还需要解析下</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">  <span class="keyword">const</span> qs = <span class="built_in">require</span>(<span class="string">'querystring'</span>)</div><div class="line">+ <span class="keyword">const</span> signature = <span class="built_in">require</span>(<span class="string">'cookie-signature'</span>)</div><div class="line">  io.on(<span class="string">'connection'</span>, socket =&gt; &#123;</div><div class="line">    <span class="keyword">const</span> cookieStr = socket.handshake.headers.cookie</div><div class="line">    <span class="keyword">const</span> cookie = qs.parse(cookieStr, <span class="string">'; '</span>)</div><div class="line">+</div><div class="line">+   <span class="comment">// 解析签名,  cookie[name] === 's:' + 签名(sessionID) </span></div><div class="line">+   <span class="comment">// 这里的secret 就是自己配置的加密字符串, cookieName 就是配置的cookie名字，默认是 connect.sid</span></div><div class="line">+   <span class="keyword">const</span> sessionID = signature.unsign(cookie[cookieName].slice(<span class="number">2</span>), secret)</div><div class="line">  &#125;)</div></pre></td></tr></table></figure>
+<blockquote>
+<p>或者简单粗暴点也是可以了, 哈哈</p>
+</blockquote>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> sessionID = val.slice(<span class="number">0</span>, cookie[cookieName].slice(<span class="number">2</span>).lastIndexOf(<span class="string">'.'</span>))</div></pre></td></tr></table></figure>
+<h2 id="然后调用store-get就可以得到session"><a href="#然后调用store-get就可以得到session" class="headerlink" title="然后调用store.get就可以得到session"></a>然后调用store.get就可以得到session</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> store = <span class="keyword">new</span> session.MemoryStore() <span class="comment">// or MongoDBStore or RedisStore or ...</span></div><div class="line">store.get(sessionID, (err, session) =&gt; &#123;</div><div class="line">  <span class="keyword">if</span> (err) <span class="keyword">return</span> </div><div class="line">  <span class="built_in">console</span>.log(session)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h1 id="后来看了下源码，发现不用这么麻烦"><a href="#后来看了下源码，发现不用这么麻烦" class="headerlink" title="后来看了下源码，发现不用这么麻烦"></a>后来看了下源码，发现不用这么麻烦</h1><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">io.use(<span class="function"><span class="keyword">function</span>(<span class="params">socket, next</span>) </span>&#123;</div><div class="line">    <span class="comment">// console.log(socket.request)</span></div><div class="line">    sessionMiddleware(socket.request, socket.request.res, next)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://huoqishi.github.io/2017/09/12/socket-io中获取session/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/06/canvas绘制自由线条/" class="archive-article-date">
-  	<time datetime="2017-09-06T12:50:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-06</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2017/09/16/大话http/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          大话http
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/09/06/canvas绘制自由线条/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">canvas绘制自由线条</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/06/canvas绘制自由线条/">canvas绘制自由线条</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/08/13/ES6模板字符串/" class="archive-article-date">
-  	<time datetime="2017-08-13T14:00:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/13/ES6模板字符串/">ES6-模板字符串</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">es6</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/08/13/Git/" class="archive-article-date">
-  	<time datetime="2017-08-13T14:00:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/13/Git/">Git备忘</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">es6</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/08/13/fileUpload/" class="archive-article-date">
-  	<time datetime="2017-08-13T14:00:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-13</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/13/fileUpload/">formidable上传文件</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">node.js</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/08/12/test02/" class="archive-article-date">
-  	<time datetime="2017-08-12T14:12:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/08/12/test02/">test02</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/19/hello-world/" class="archive-article-date">
-  	<time datetime="2017-07-19T00:41:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-19</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/19/hello-world/">Hello World</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -494,8 +342,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
