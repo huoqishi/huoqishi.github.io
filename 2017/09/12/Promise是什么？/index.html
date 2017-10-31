@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://huoqishi.github.io">
-  <title>canvas绘制自由线条 | 火骑士空空的博客</title>
+  <title>socket.io中获取session | 火骑士空空的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="canvas绘制自由线条 使用canvas跟随鼠标绘制线条  1234567891011121314151617181920212223242526var oCanvas = document.querySelector(&apos;canvas&apos;)var ctx = oCanvas.getContext(&apos;2d&apos;)// 鼠标按下时, beginPath,moveTo鼠标位置// 此后每次鼠标移动时.lin">
+  <meta name="description" content="Promise 是什么?Promise 是 ES6 中提出的一个新的对象, 也是一个构造器方法，一定程度上可以解决异步代码中回调函数嵌套所导致的代码嵌套太深的问题,也就是回调地狱。  如下代码: 由于业务的需要，回调嵌套的代码变多，渐渐的就会导致代码的可读性，可以维护性变差。而Promise就是一个用来解决这种问题的事物  1234567891011121314151617181920212223">
 <meta property="og:type" content="article">
-<meta property="og:title" content="canvas绘制自由线条">
-<meta property="og:url" content="https://huoqishi.github.io/2017/09/06/canvas绘制自由线条/index.html">
+<meta property="og:title" content="socket.io中获取session">
+<meta property="og:url" content="https://huoqishi.github.io/2017/09/12/Promise是什么？/index.html">
 <meta property="og:site_name" content="火骑士空空的博客">
-<meta property="og:description" content="canvas绘制自由线条 使用canvas跟随鼠标绘制线条  1234567891011121314151617181920212223242526var oCanvas = document.querySelector(&apos;canvas&apos;)var ctx = oCanvas.getContext(&apos;2d&apos;)// 鼠标按下时, beginPath,moveTo鼠标位置// 此后每次鼠标移动时.lin">
+<meta property="og:description" content="Promise 是什么?Promise 是 ES6 中提出的一个新的对象, 也是一个构造器方法，一定程度上可以解决异步代码中回调函数嵌套所导致的代码嵌套太深的问题,也就是回调地狱。  如下代码: 由于业务的需要，回调嵌套的代码变多，渐渐的就会导致代码的可读性，可以维护性变差。而Promise就是一个用来解决这种问题的事物  1234567891011121314151617181920212223">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-06T14:01:13.000Z">
+<meta property="og:updated_time" content="2017-10-23T01:03:22.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="canvas绘制自由线条">
-<meta name="twitter:description" content="canvas绘制自由线条 使用canvas跟随鼠标绘制线条  1234567891011121314151617181920212223242526var oCanvas = document.querySelector(&apos;canvas&apos;)var ctx = oCanvas.getContext(&apos;2d&apos;)// 鼠标按下时, beginPath,moveTo鼠标位置// 此后每次鼠标移动时.lin">
+<meta name="twitter:title" content="socket.io中获取session">
+<meta name="twitter:description" content="Promise 是什么?Promise 是 ES6 中提出的一个新的对象, 也是一个构造器方法，一定程度上可以解决异步代码中回调函数嵌套所导致的代码嵌套太深的问题,也就是回调地狱。  如下代码: 由于业务的需要，回调嵌套的代码变多，渐渐的就会导致代码的可读性，可以维护性变差。而Promise就是一个用来解决这种问题的事物  1234567891011121314151617181920212223">
   
     <link rel="alternative" href="/atom.xml" title="火骑士空空的博客" type="application/atom+xml">
   
@@ -150,31 +150,46 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-canvas绘制自由线条" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-Promise是什么？" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      canvas绘制自由线条
+      socket.io中获取session
     </h1>
   
 
         
-        <a href="/2017/09/06/canvas绘制自由线条/" class="archive-article-date">
-  	<time datetime="2017-09-06T12:50:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-06</time>
+        <a href="/2017/09/12/Promise是什么？/" class="archive-article-date">
+  	<time datetime="2017-09-11T19:15:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-12</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="canvas绘制自由线条"><a href="#canvas绘制自由线条" class="headerlink" title="canvas绘制自由线条"></a>canvas绘制自由线条</h1><blockquote>
-<p>使用canvas跟随鼠标绘制线条</p>
+        <h1 id="Promise-是什么"><a href="#Promise-是什么" class="headerlink" title="Promise 是什么?"></a>Promise 是什么?</h1><p>Promise 是 ES6 中提出的一个新的对象, 也是一个构造器方法，一定程度上可以解决异步代码中回调函数嵌套所导致的代码嵌套太深的问题,也就是回调地狱。</p>
+<blockquote>
+<p>如下代码:</p>
+<p>由于业务的需要，回调嵌套的代码变多，渐渐的就会导致代码的可读性，可以维护性变差。而Promise就是一个用来解决这种问题的事物</p>
 </blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> oCanvas = <span class="built_in">document</span>.querySelector(<span class="string">'canvas'</span>)</div><div class="line"><span class="keyword">var</span> ctx = oCanvas.getContext(<span class="string">'2d'</span>)</div><div class="line"></div><div class="line"><span class="comment">// 鼠标按下时, beginPath,moveTo鼠标位置</span></div><div class="line"><span class="comment">// 此后每次鼠标移动时.lineTo鼠标位置，鼠标抬起进，绘制</span></div><div class="line">oCanvas.width = <span class="built_in">document</span>.body.offsetWidth</div><div class="line">oCanvas.height = <span class="built_in">document</span>.body.offsetWidth</div><div class="line"><span class="keyword">var</span> start = <span class="literal">false</span></div><div class="line"></div><div class="line">oCanvas.addEventListener(<span class="string">'touchstart'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line">  start = <span class="literal">true</span></div><div class="line">  ctx.beginPath()</div><div class="line">  <span class="keyword">var</span> touch = e.touches[<span class="number">0</span>]</div><div class="line">  ctx.moveTo(touch.pageX, touch.pageY)</div><div class="line">&#125;)</div><div class="line"></div><div class="line">oCanvas.addEventListener(<span class="string">'touchmove'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line">  <span class="keyword">if</span> (!start) <span class="keyword">return</span></div><div class="line">  <span class="keyword">var</span> touch = e.touches[<span class="number">0</span>]</div><div class="line">  ctx.lineTo(touch.pageX, touch.pageY)</div><div class="line">  ctx.stroke()</div><div class="line">&#125;)</div><div class="line">oCanvas.addEventListener(<span class="string">'touchend'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  start = <span class="literal">false</span></div><div class="line">  ctx.stroke()</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
-
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">getUserInfo</span> (<span class="params">callback</span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> num = <span class="built_in">Math</span>.random() * <span class="number">100</span></div><div class="line">  setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">	callback(num)</div><div class="line">  &#125;, <span class="number">1000</span>)</div><div class="line">&#125;</div><div class="line">getUserInfo(<span class="function"><span class="keyword">function</span> (<span class="params">num</span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(num)</div><div class="line">  getUserInfo(<span class="function"><span class="keyword">function</span> (<span class="params">num</span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(num)</div><div class="line">    getUserInfo(<span class="function"><span class="keyword">function</span> (<span class="params">num</span>) </span>&#123;</div><div class="line">      <span class="built_in">console</span>.log(num)</div><div class="line">      getUserInfo(<span class="function"><span class="keyword">function</span> (<span class="params">num</span>) </span>&#123;</div><div class="line">        <span class="built_in">console</span>.log(num)</div><div class="line">        getUserInfo(<span class="function"><span class="keyword">function</span> (<span class="params">num</span>) </span>&#123;</div><div class="line">          <span class="built_in">console</span>.log(num)</div><div class="line">          getUserInfo(<span class="function"><span class="keyword">function</span> (<span class="params">num</span>) </span>&#123;</div><div class="line">            <span class="built_in">console</span>.log(num)</div><div class="line">          &#125;)</div><div class="line">        &#125;)</div><div class="line">      &#125;)</div><div class="line">    &#125;)</div><div class="line">  &#125;)</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<h1 id="如何使用Promise"><a href="#如何使用Promise" class="headerlink" title="如何使用Promise"></a>如何使用Promise</h1><h2 id="1-创建一个Promise的实例对象"><a href="#1-创建一个Promise的实例对象" class="headerlink" title="1. 创建一个Promise的实例对象"></a>1. 创建一个Promise的实例对象</h2><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"> * 这里需要传递一个回调数作为参数, new Promise() 执行时，这个回调函数也会立即执行。</div><div class="line"> * 下面代码执行时，会先输出 '我是中国人，我爱自己的祖国!', 再输出 '哈哈!'</div><div class="line"> */</div><div class="line"><span class="keyword">var</span> promise = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123; <span class="built_in">console</span>.log(<span class="string">'我是中国人，我爱自己的祖国!'</span>)&#125;)</div><div class="line"><span class="built_in">console</span>.log(<span class="string">'哈哈!'</span>)</div></pre></td></tr></table></figure>
+<h2 id="2-调用-resolve-或者-reject-方法"><a href="#2-调用-resolve-或者-reject-方法" class="headerlink" title="2.调用 resolve 或者 reject 方法"></a>2.调用 resolve 或者 reject 方法</h2><p>使用 Promise 时，异步的代码就可以写在上面的回调函数中。这个回调函数有两个参数 resolve 和 reject 都是方法。当异步代码执行成功时需要调用下 resolve , 执行失败时需要调用 reject。</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"> * 下面代码执行时，会依次输出:</div><div class="line"> * '我是中国人，我爱自己的祖国!'</div><div class="line"> * '哈哈!'</div><div class="line"> * '异步代码执行成功了!'</div><div class="line"> */</div><div class="line"><span class="keyword">var</span> promise = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span> (<span class="params">resolve</span>) </span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="string">'我是中国人，我爱自己的祖国!'</span>)</div><div class="line">  setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="string">'异步代码执行成功了!'</span>)</div><div class="line">    resolve()</div><div class="line">  &#125;, <span class="number">1000</span>)</div><div class="line">&#125;)</div><div class="line"><span class="built_in">console</span>.log(<span class="string">'哈哈!'</span>)</div></pre></td></tr></table></figure>
+<h2 id="3-使用Promise实例的then方法"><a href="#3-使用Promise实例的then方法" class="headerlink" title="3.使用Promise实例的then方法"></a>3.使用Promise实例的then方法</h2><p>实例的then使用是提供两个回调函数，一个是异步代码执行成功的回调函数，一个失败的回调函数</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"> * then 方法执行时，参数中的两个回调函数并不会立即执行，会被Promise内部临时保存起来，直到上面的 resovle 或者 reject 方法被调用时, 它们都会相应的被执行, 并且resolve 或者 reject 的实参会被相应的传递给两个回调函数。</div><div class="line"> * 总结两个回调会执行的条件是: </div><div class="line"> * 1. 我们通过调用 promise.then 提供了这两个回调函数</div><div class="line"> * 2. Promise 中的 resolve 或者 reject 被调用了</div><div class="line"> */</div><div class="line">promise.then(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;&#125;, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;&#125;)</div></pre></td></tr></table></figure>
+<blockquote>
+<p>看下面的代码的执行顺序</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"> * 以下代码会立即输出:</div><div class="line"> * 1</div><div class="line"> * 2</div><div class="line"> * 6</div><div class="line"> * 然后1秒之后又会输出:</div><div class="line"> * 3</div><div class="line"> * '你好'</div><div class="line"> * 4</div><div class="line"> */</div><div class="line"><span class="built_in">console</span>.log(<span class="number">1</span>);</div><div class="line"><span class="keyword">var</span> promise = <span class="keyword">new</span> <span class="built_in">Promise</span>(<span class="function"><span class="keyword">function</span> (<span class="params">resolve, reject</span>)</span>&#123;</div><div class="line">  <span class="built_in">console</span>.log(<span class="number">2</span>)</div><div class="line">  setTimeout(<span class="function"><span class="keyword">function</span> (<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="number">3</span>)</div><div class="line">    resolve(<span class="string">'你好'</span>);</div><div class="line">  &#125;, <span class="number">1000</span>);</div><div class="line">&#125;).then(<span class="function"><span class="keyword">function</span>(<span class="params">arg</span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(arg)</div><div class="line">    <span class="built_in">console</span>.log(<span class="number">4</span>);</div><div class="line">&#125;, <span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;</div><div class="line">    <span class="built_in">console</span>.log(<span class="number">5</span>);</div><div class="line">&#125;);</div><div class="line"><span class="built_in">console</span>.log(<span class="number">6</span>);</div></pre></td></tr></table></figure>
+<p>前一个回调函数，有可能返回的还是一个<code>Promise</code>对象（即有异步操作），这时后一个回调函数，就会等待该<code>Promise</code>对象的状态发生变化，才会被调用。</p>
+<h2 id="Promise实例的then方法"><a href="#Promise实例的then方法" class="headerlink" title="Promise实例的then方法"></a>Promise实例的then方法</h2><blockquote>
+<p>then方法的返回值是一个新的Promise实例</p>
+</blockquote>
+<h2 id="Promise-中的实例的-all-方法"><a href="#Promise-中的实例的-all-方法" class="headerlink" title="Promise 中的实例的 all 方法"></a>Promise 中的实例的 all 方法</h2><h2 id="Promise中的三种状态"><a href="#Promise中的三种状态" class="headerlink" title="Promise中的三种状态"></a>Promise中的三种状态</h2>
       
 
       
@@ -253,7 +268,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://huoqishi.github.io/2017/09/06/canvas绘制自由线条/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://huoqishi.github.io/2017/09/12/Promise是什么？/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -267,7 +282,7 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/09/12/Promise是什么？/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/09/12/socket-io中获取session/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
@@ -277,8 +292,8 @@
     </a>
   
   
-    <a href="/2017/08/13/Git/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Git备忘</div>
+    <a href="/2017/09/06/canvas绘制自由线条/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">canvas绘制自由线条</div>
       <i class="icon-circle-right"></i>
     </a>
   

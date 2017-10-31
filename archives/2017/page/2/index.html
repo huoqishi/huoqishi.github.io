@@ -6,19 +6,15 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://huoqishi.github.io">
-  <title>canvas绘制自由线条 | 火骑士空空的博客</title>
+  <title>Archives: 2017 | 火骑士空空的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="canvas绘制自由线条 使用canvas跟随鼠标绘制线条  1234567891011121314151617181920212223242526var oCanvas = document.querySelector(&apos;canvas&apos;)var ctx = oCanvas.getContext(&apos;2d&apos;)// 鼠标按下时, beginPath,moveTo鼠标位置// 此后每次鼠标移动时.lin">
-<meta property="og:type" content="article">
-<meta property="og:title" content="canvas绘制自由线条">
-<meta property="og:url" content="https://huoqishi.github.io/2017/09/06/canvas绘制自由线条/index.html">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="火骑士空空的博客">
+<meta property="og:url" content="https://huoqishi.github.io/archives/2017/page/2/index.html">
 <meta property="og:site_name" content="火骑士空空的博客">
-<meta property="og:description" content="canvas绘制自由线条 使用canvas跟随鼠标绘制线条  1234567891011121314151617181920212223242526var oCanvas = document.querySelector(&apos;canvas&apos;)var ctx = oCanvas.getContext(&apos;2d&apos;)// 鼠标按下时, beginPath,moveTo鼠标位置// 此后每次鼠标移动时.lin">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-06T14:01:13.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="canvas绘制自由线条">
-<meta name="twitter:description" content="canvas绘制自由线条 使用canvas跟随鼠标绘制线条  1234567891011121314151617181920212223242526var oCanvas = document.querySelector(&apos;canvas&apos;)var ctx = oCanvas.getContext(&apos;2d&apos;)// 鼠标按下时, beginPath,moveTo鼠标位置// 此后每次鼠标移动时.lin">
+<meta name="twitter:title" content="火骑士空空的博客">
   
     <link rel="alternative" href="/atom.xml" title="火骑士空空的博客" type="application/atom+xml">
   
@@ -150,165 +146,132 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-canvas绘制自由线条" class="article article-type-post " itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
+            
   
-    <h1 class="article-title" itemprop="name">
-      canvas绘制自由线条
+  
+    
+    
+      
+      
+      <section class="archives-wrap">
+        <div class="archive-year-wrap">
+          <a href="/archives/2017" class="archive-year">2017</a>
+        </div>
+        <div class="archives">
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2017/08/13/es6/" class="archive-article-date">
+  	<time datetime="2017-08-13T14:00:52.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-13</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/08/13/es6/">ES6</a>
     </h1>
   
 
-        
-        <a href="/2017/09/06/canvas绘制自由线条/" class="archive-article-date">
-  	<time datetime="2017-09-06T12:50:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-06</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="canvas绘制自由线条"><a href="#canvas绘制自由线条" class="headerlink" title="canvas绘制自由线条"></a>canvas绘制自由线条</h1><blockquote>
-<p>使用canvas跟随鼠标绘制线条</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> oCanvas = <span class="built_in">document</span>.querySelector(<span class="string">'canvas'</span>)</div><div class="line"><span class="keyword">var</span> ctx = oCanvas.getContext(<span class="string">'2d'</span>)</div><div class="line"></div><div class="line"><span class="comment">// 鼠标按下时, beginPath,moveTo鼠标位置</span></div><div class="line"><span class="comment">// 此后每次鼠标移动时.lineTo鼠标位置，鼠标抬起进，绘制</span></div><div class="line">oCanvas.width = <span class="built_in">document</span>.body.offsetWidth</div><div class="line">oCanvas.height = <span class="built_in">document</span>.body.offsetWidth</div><div class="line"><span class="keyword">var</span> start = <span class="literal">false</span></div><div class="line"></div><div class="line">oCanvas.addEventListener(<span class="string">'touchstart'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line">  start = <span class="literal">true</span></div><div class="line">  ctx.beginPath()</div><div class="line">  <span class="keyword">var</span> touch = e.touches[<span class="number">0</span>]</div><div class="line">  ctx.moveTo(touch.pageX, touch.pageY)</div><div class="line">&#125;)</div><div class="line"></div><div class="line">oCanvas.addEventListener(<span class="string">'touchmove'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line">  <span class="keyword">if</span> (!start) <span class="keyword">return</span></div><div class="line">  <span class="keyword">var</span> touch = e.touches[<span class="number">0</span>]</div><div class="line">  ctx.lineTo(touch.pageX, touch.pageY)</div><div class="line">  ctx.stroke()</div><div class="line">&#125;)</div><div class="line">oCanvas.addEventListener(<span class="string">'touchend'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  start = <span class="literal">false</span></div><div class="line">  ctx.stroke()</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+        <div class="article-info info-on-right">
+          
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">es6</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">javascript</a>
+        		</li>
+      		
+		</ul>
+	</div>
 
-      
+          
 
-      
-        <div class="page-reward">
-          <a href="javascript:;" class="page-reward-btn tooltip-top">
-            <div class="tooltip tooltip-east">
-            <span class="tooltip-item">
-              赏
-            </span>
-            <span class="tooltip-content">
-              <span class="tooltip-text">
-                <span class="tooltip-inner">
-                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
-                  <div class="reward-box">
-                    
-                    
-                  </div>
-                </span>
-              </span>
-            </span>
-          </div>
-          </a>
         </div>
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-
-      
-        
-<div class="share-btn share-icons tooltip-left">
-  <div class="tooltip tooltip-east">
-    <span class="tooltip-item">
-      <a href="javascript:;" class="share-sns share-outer">
-        <i class="icon icon-share"></i>
-      </a>
-    </span>
-    <span class="tooltip-content">
-      <div class="share-wrap">
-        <div class="share-icons">
-          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
-            <i class="icon icon-weibo"></i>
-          </a>
-          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
-            <i class="icon icon-weixin"></i>
-          </a>
-          <a class="qq share-sns" href="javascript:;" data-type="qq">
-            <i class="icon icon-qq"></i>
-          </a>
-          <a class="douban share-sns" href="javascript:;" data-type="douban">
-            <i class="icon icon-douban"></i>
-          </a>
-          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
-            <i class="icon icon-qzone"></i>
-          </a>
-          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
-            <i class="icon icon-facebook"></i>
-          </a>
-          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
-            <i class="icon icon-twitter"></i>
-          </a>
-          <a class="google share-sns" href="javascript:;" data-type="google">
-            <i class="icon icon-google"></i>
-          </a>
-        </div>
-      </div>
-    </span>
-  </div>
-</div>
-
-<div class="page-modal wx-share js-wx-box">
-    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
-    <p>扫一扫，分享到微信</p>
-    <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://huoqishi.github.io/2017/09/06/canvas绘制自由线条/" alt="微信分享二维码">
-    </div>
-</div>
-
-<div class="mask js-mask"></div>
-      
-      <div class="clearfix"></div>
-    </div>
+        <div class="clearfix"></div>
+    </header>
   </div>
 </article>
-
   
-<nav id="article-nav">
-  
-    <a href="/2017/09/12/Promise是什么？/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          socket.io中获取session
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2017/08/13/Git/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Git备忘</div>
-      <i class="icon-circle-right"></i>
-    </a>
-  
-</nav>
-
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2017/08/12/test02/" class="archive-article-date">
+  	<time datetime="2017-08-12T14:12:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-08-12</time>
+</a>
         </div>
-        
-        
-    </div>
-</aside>
-
-
-
+    	 
   
-  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/08/12/test02/">test02</a>
+    </h1>
   
 
+        <div class="article-info info-on-right">
+          
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">JavaScript</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+          
+
+        </div>
+        <div class="clearfix"></div>
+    </header>
+  </div>
+</article>
+  
+    
+    
+    <article class="archive-article archive-type-post">
+  <div class="archive-article-inner">
+    <header class="archive-article-header">
+      	<div class="article-meta">
+	      	<a href="/2017/07/19/hello-world/" class="archive-article-date">
+  	<time datetime="2017-07-19T00:41:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-07-19</time>
+</a>
+        </div>
+    	 
+  
+    <h1 itemprop="name">
+      <a class="archive-article-title" href="/2017/07/19/hello-world/">Hello World</a>
+    </h1>
   
 
+        <div class="article-info info-on-right">
+          
+          
+
+        </div>
+        <div class="clearfix"></div>
+    </header>
+  </div>
+</article>
+  
+  
+    </div></section>
+  
+
+    
+    <nav id="page-nav">
+      <a class="extend prev" rel="prev" href="/archives/2017/">&laquo; Prev</a><a class="page-number" href="/archives/2017/">1</a><span class="page-number current">2</span>
+    </nav>
   
 
 
@@ -332,8 +295,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: true,
-		isArchive: false,
+		isPost: false,
+		isArchive: true,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

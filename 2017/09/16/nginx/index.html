@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://huoqishi.github.io">
-  <title>canvas绘制自由线条 | 火骑士空空的博客</title>
+  <title>nginx | 火骑士空空的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="canvas绘制自由线条 使用canvas跟随鼠标绘制线条  1234567891011121314151617181920212223242526var oCanvas = document.querySelector(&apos;canvas&apos;)var ctx = oCanvas.getContext(&apos;2d&apos;)// 鼠标按下时, beginPath,moveTo鼠标位置// 此后每次鼠标移动时.lin">
+  <meta name="description" content="前言nginx 启动停止重启命令12# 启动nginx$ nginx -c /path/to/nginx.conf 12# 修改配置后重新加载$ nginx -s reload 12# 快速停止nginx$ nginx -s stop 12# 完整有序的停止nginx$ nginx quit">
 <meta property="og:type" content="article">
-<meta property="og:title" content="canvas绘制自由线条">
-<meta property="og:url" content="https://huoqishi.github.io/2017/09/06/canvas绘制自由线条/index.html">
+<meta property="og:title" content="nginx">
+<meta property="og:url" content="https://huoqishi.github.io/2017/09/16/nginx/index.html">
 <meta property="og:site_name" content="火骑士空空的博客">
-<meta property="og:description" content="canvas绘制自由线条 使用canvas跟随鼠标绘制线条  1234567891011121314151617181920212223242526var oCanvas = document.querySelector(&apos;canvas&apos;)var ctx = oCanvas.getContext(&apos;2d&apos;)// 鼠标按下时, beginPath,moveTo鼠标位置// 此后每次鼠标移动时.lin">
+<meta property="og:description" content="前言nginx 启动停止重启命令12# 启动nginx$ nginx -c /path/to/nginx.conf 12# 修改配置后重新加载$ nginx -s reload 12# 快速停止nginx$ nginx -s stop 12# 完整有序的停止nginx$ nginx quit">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-06T14:01:13.000Z">
+<meta property="og:updated_time" content="2017-10-25T13:36:37.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="canvas绘制自由线条">
-<meta name="twitter:description" content="canvas绘制自由线条 使用canvas跟随鼠标绘制线条  1234567891011121314151617181920212223242526var oCanvas = document.querySelector(&apos;canvas&apos;)var ctx = oCanvas.getContext(&apos;2d&apos;)// 鼠标按下时, beginPath,moveTo鼠标位置// 此后每次鼠标移动时.lin">
+<meta name="twitter:title" content="nginx">
+<meta name="twitter:description" content="前言nginx 启动停止重启命令12# 启动nginx$ nginx -c /path/to/nginx.conf 12# 修改配置后重新加载$ nginx -s reload 12# 快速停止nginx$ nginx -s stop 12# 完整有序的停止nginx$ nginx quit">
   
     <link rel="alternative" href="/atom.xml" title="火骑士空空的博客" type="application/atom+xml">
   
@@ -150,30 +150,30 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-canvas绘制自由线条" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-nginx" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      canvas绘制自由线条
+      nginx
     </h1>
   
 
         
-        <a href="/2017/09/06/canvas绘制自由线条/" class="archive-article-date">
-  	<time datetime="2017-09-06T12:50:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-06</time>
+        <a href="/2017/09/16/nginx/" class="archive-article-date">
+  	<time datetime="2017-09-16T09:44:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-16</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="canvas绘制自由线条"><a href="#canvas绘制自由线条" class="headerlink" title="canvas绘制自由线条"></a>canvas绘制自由线条</h1><blockquote>
-<p>使用canvas跟随鼠标绘制线条</p>
-</blockquote>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> oCanvas = <span class="built_in">document</span>.querySelector(<span class="string">'canvas'</span>)</div><div class="line"><span class="keyword">var</span> ctx = oCanvas.getContext(<span class="string">'2d'</span>)</div><div class="line"></div><div class="line"><span class="comment">// 鼠标按下时, beginPath,moveTo鼠标位置</span></div><div class="line"><span class="comment">// 此后每次鼠标移动时.lineTo鼠标位置，鼠标抬起进，绘制</span></div><div class="line">oCanvas.width = <span class="built_in">document</span>.body.offsetWidth</div><div class="line">oCanvas.height = <span class="built_in">document</span>.body.offsetWidth</div><div class="line"><span class="keyword">var</span> start = <span class="literal">false</span></div><div class="line"></div><div class="line">oCanvas.addEventListener(<span class="string">'touchstart'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line">  start = <span class="literal">true</span></div><div class="line">  ctx.beginPath()</div><div class="line">  <span class="keyword">var</span> touch = e.touches[<span class="number">0</span>]</div><div class="line">  ctx.moveTo(touch.pageX, touch.pageY)</div><div class="line">&#125;)</div><div class="line"></div><div class="line">oCanvas.addEventListener(<span class="string">'touchmove'</span>, <span class="function"><span class="keyword">function</span> (<span class="params">e</span>) </span>&#123;</div><div class="line">  <span class="keyword">if</span> (!start) <span class="keyword">return</span></div><div class="line">  <span class="keyword">var</span> touch = e.touches[<span class="number">0</span>]</div><div class="line">  ctx.lineTo(touch.pageX, touch.pageY)</div><div class="line">  ctx.stroke()</div><div class="line">&#125;)</div><div class="line">oCanvas.addEventListener(<span class="string">'touchend'</span>, <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</div><div class="line">  start = <span class="literal">false</span></div><div class="line">  ctx.stroke()</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><h2 id="nginx-启动停止重启命令"><a href="#nginx-启动停止重启命令" class="headerlink" title="nginx 启动停止重启命令"></a>nginx 启动停止重启命令</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 启动nginx</span></div><div class="line">$ nginx -c /path/to/nginx.conf</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 修改配置后重新加载</span></div><div class="line">$ nginx -s reload</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 快速停止nginx</span></div><div class="line">$ nginx -s stop</div></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 完整有序的停止nginx</span></div><div class="line">$ nginx quit</div></pre></td></tr></table></figure>
 
       
 
@@ -253,7 +253,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="http://s.jiathis.com/qrcode.php?url=https://huoqishi.github.io/2017/09/06/canvas绘制自由线条/" alt="微信分享二维码">
+      <img src="http://s.jiathis.com/qrcode.php?url=https://huoqishi.github.io/2017/09/16/nginx/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -267,18 +267,18 @@
   
 <nav id="article-nav">
   
-    <a href="/2017/09/12/Promise是什么？/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2017/09/20/模块化规范/" id="article-nav-newer" class="article-nav-link-wrap">
       <i class="icon-circle-left"></i>
       <div class="article-nav-title">
         
-          socket.io中获取session
+          Git备忘
         
       </div>
     </a>
   
   
-    <a href="/2017/08/13/Git/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Git备忘</div>
+    <a href="/2017/09/16/linux/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">大话http</div>
       <i class="icon-circle-right"></i>
     </a>
   
